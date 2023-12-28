@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style2.css">
+</head>
+<body background="../static/img7.jpg">
+    <header><img src="../static/img5.png" alt="icon" width="5%" height="5%"> 
+    
+       
+       
+    
+    <div class="main" >
+    <div class="search">     
+    <h1>add task here</h1>
+    <form action="addtask" method="post">
+        
+        <label> task id</label>
+        <br>
+                
+        <input name="task_id" type="number">
+        <br>
+        
+        
+        
+                
+        <label>project name</label>
+        <br>        
+                    
+       <input name="project_name" type="text">
+        <br>
+        
+
+        <label>category </label>                     
+        <br>
+        <input name="category" type="text">
+        <br>
+
+        <label> project description</label>
+        <br>
+        
+        <textarea name="description" rows="4" cols="25"></textarea>
+        <br>
+        
+        <label>start date</label>
+        <br>
+        
+        <input name="start_date" type="date">
+        <br>
+        
+        <label>deadline date</label>
+        <br>
+        
+        <input name="deadline_date" type="date">
+        <br>
+        <label>status </label>                     
+        <br>
+        <input name="status" type="text">
+        <br>
+        <br>
+        
+        <input type="submit" value="ADD TASK"></td>
+        {{msg}}
+        
+
+                
+    </div>         
+    </form>
+    </div>
+    </div>
+    
+    
+</body>
+</html>

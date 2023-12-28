@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body background="../static/img7.jpg">
+    <header><img src="../static/img5.png" alt="icon" width="5%" height="5%">
+        
+    <form action="/view" method="POST">
+    <table class="center">
+
+       
+        <h1 align="center">task details</h1>
+            <tr>
+                <h3><th>task_id</th></h3>
+                
+                <th>project_name</th>
+                <th>category</th>
+                <th>description</th>
+                <th>start_date</th>
+                <th>deadline_date</th>
+                <th>status</th>
+                <th>actions</th>
+                
+                
+                
+                
+
+                   
+                
+
+            </tr>
+        
+        <trbody>
+            {% for i in sqldata %}   
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+                <td>{{i[5]}}</td>
+                <td>{{i[6]}}</td>
+                <td>
+                    <a href='delete/{{i[0]}}'>DELETE</a>
+                   <a href='update_task/{{i[0]}}'>UPDATE</a>
+                
+                
+                
+
+            </tr>
+            {%endfor%}
+        </trbody>
+        {{msg}}
+        
+    </table>
+    </form>
+    
+</body>
+</html>
